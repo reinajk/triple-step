@@ -20,41 +20,41 @@ def sdd
 end
 end 
  
-r = [65,80,67,35,58,60,72,75,68,92,36,50,2,58.5,46,42,78,62,84,70]
-e = [44,87,100,63,52,60,58,73,55,86,29,56,89,23,65,84,64,27,86,84]
+sci = [65,80,67,35,58,60,72,75,68,92,36,50,2,58.5,46,42,78,62,84,70]
+eng = [44,87,100,63,52,60,58,73,55,86,29,56,89,23,65,84,64,27,86,84]
 
 puts"\n"
 print "理科の平均点:"
-puts r.ave
+puts sci.ave
 print "英語の平均点:"
-puts e.ave
+puts eng.ave
 puts "\n" 
 puts "\n"
 
 print "理科の標準偏差:"
-puts r.sdd
+puts sci.sdd
 print "英語の標準偏差:"
-puts e.sdd
+puts eng.sdd
 puts"\n"
 puts"\n"
 
 print "理科の合計点:"
-puts r.sum
+puts sci.sum
 print "英語の合計点:"
-puts e.sum
+puts eng.sum
 puts "\n"
 puts "\n"
 
 puts "理科の偏差値:"
-r.each do |x|
-    dev = ( x - r.ave ) / r.sdd * 10 + 50 
+sci.each do |x|
+    dev = ( x - sci.ave ) / sci.sdd * 10 + 50 
     print "#{x}\t#{dev}\n"
 end
 print "\n"
 
 puts "英語の偏差値:"
-e.each do |x|
-    dev = ( x - e.ave ) / e.sdd * 10 + 50
+eng.each do |x|
+    dev = ( x - eng.ave ) / eng.sdd * 10 + 50
     print "#{x}\t#{dev}\n"
 end
 puts"\n"
